@@ -12,11 +12,13 @@
   //Pages
   import MainPage from "./pages";
   import NotFoundPage from "./pages/404";
+  import AnswerPage from "./pages/answer";
 
 const App = () => (
   <Router>
     <Routes>
       <Route exact path="/" element={<MainPage/>} />
+      <Route exact path="/answer" element={<AnswerPage/>} />
       <Route element={<NotFoundPage/>}/>
     </Routes>
   </Router>
