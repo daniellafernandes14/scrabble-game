@@ -1,4 +1,4 @@
- import React, { Component } from "react";
+ import React from "react";
  import "./App.css";
 
  import {
@@ -6,12 +6,10 @@
    Route,
    Routes,
    Link,
-   Redirect
   } from "react-router-dom";
 
   //Pages
   import MainPage from "./pages";
-  import NotFoundPage from "./pages/404";
   import AnswerPage from "./pages/answer";
 
 const App = () => (
@@ -19,7 +17,6 @@ const App = () => (
     <Routes>
       <Route exact path="/" element={<MainPage/>} />
       <Route exact path="/answer" element={<AnswerPage/>} />
-      <Route element={<NotFoundPage/>}/>
     </Routes>
   </Router>
 )
