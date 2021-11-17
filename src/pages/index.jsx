@@ -1,11 +1,12 @@
 import React from "react";
-
+import Form from "../components/form";
 
 const MainPage = () => {
   return (
     <div>
       <h3>This is the home page</h3>
       {NewArray()}
+      {Form()}
     </div>
   );
 }
