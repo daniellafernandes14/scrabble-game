@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import { useNavigate } from "react-router-dom";
+import { withRouter }from "react-router-dom";
 
 
-class GuessForm extends Component {
+class GuessForm extends React.Component {
   state = {
     guess: ''
   };
 
-  let navigate = useNavigate();
-
   onSubmit = (e) => {
     e.preventDefault();
-    navigate('answer');
     console.log(this.state);
+    window.location.href = "http://mywebsite.com/home.html";
   };
 
   render() {
@@ -22,8 +20,10 @@ class GuessForm extends Component {
           placeholder="Make your guess"
           value={this.state.guess}
           onChange={e => this.setState({ guess: e.target.value})} />
-        {/* <button onClick={e => this.onSubmit(e)}>Submit</button> */}
-        <button onSubmit={handleSubmit}>Submit</button>/
+        <button onClick={e => this.onSubmit(e)}>
+          Submit
+        </button>
+        {/* <button onClick={ history.push('/answer') }>Submit</button> */}
       </form>
     );
   }
