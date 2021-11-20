@@ -1,12 +1,12 @@
 import React from "react";
-import Form from "../components/form";
+import GuessForm from "../components/form";
 
 const MainPage = () => {
   return (
     <div>
       <h3>This is the home page</h3>
       {NewArray()}
-      {Form()}
+      <GuessForm />
     </div>
   );
 }
