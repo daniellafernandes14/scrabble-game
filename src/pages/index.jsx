@@ -15,7 +15,6 @@ export default MainPage;
 
 // Creating an array
 const NewArray = () => {
-  // const newArray = array.map((x) => String.fromCharCode(x));
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   return Array.from({
     length: 10

@@ -10,7 +10,7 @@ class GuessForm extends React.Component {
   onSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    window.location.href = "http://mywebsite.com/home.html";
+    window.location.href = "/answer";
   };
 
   render() {
@@ -23,7 +23,6 @@ class GuessForm extends React.Component {
         <button onClick={e => this.onSubmit(e)}>
           Submit
         </button>
-        {/* <button onClick={ history.push('/answer') }>Submit</button> */}
       </form>
     );
   }
